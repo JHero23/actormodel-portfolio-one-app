@@ -1,0 +1,101 @@
+/* #### Mobile Phones Portrait or Landscape #### */
+@media screen and (max-device-width: 640px){
+    /* some CSS here */
+    header {
+        width: 100%;
+    }
+
+    footer {
+        width: 100%;
+    }
+    
+    .carousel img {
+        width: 100% !important;
+        height: 216px;
+    }
+
+    .container {
+        width: 100%;
+        padding-right: 0;
+        padding-left: 0;
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    .image-column {
+        flex: 100%;
+        max-width: 100%;
+    }
+
+    .imgholder {
+        width: 280px;
+    }
+
+    .imgholder img {
+        width: 280px;
+    }
+
+    .media {
+        display: block;
+    }
+
+    .media-objects {
+        display: table;
+    }
+
+    .media-body {
+        text-align: center;
+        padding: 5px;
+    }
+
+    .navbar-toggler {
+        color: #fff !important;
+    }
+
+    a.active {
+        color: #000 !important;
+        text-align: center;
+    }
+
+    .fixed-bottom {
+        position: fixed;
+        right: 0;
+        bottom: auto;
+        left: 0;
+        z-index: 1030;
+    }
+
+    .table {
+        padding: 0 0 0 0;
+        border-radius: 0;
+    }
+
+    .table th {
+        border-top: none !important;
+        padding: 4px;
+    }
+    
+    .table td {
+        padding: 0.25rem;
+    }
+
+    #about .col-md-5, #about .col-md-7 {
+        padding-top: 5px;
+        padding-bottom: 5px;
+        align-content: center;
+    }
+
+    #sbout .row {
+        margin: 0;
+    }
+
+    .form-page {
+        padding-bottom: 20px;
+        padding-top: 20px;
+        margin: 0 0 0 0;
+    }
+
+    .form-page button {
+        width: 100%;
+    }
+}

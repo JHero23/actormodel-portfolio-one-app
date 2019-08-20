@@ -1,0 +1,186 @@
+body {
+    background: #d9d9d9;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+header {
+    width: 100%;
+}
+
+.bg-cerulean {
+    background-color: #4484ce;
+    border: 1px solid #00000033;
+}
+
+.update {
+    background: #f19f4d !important;
+}
+
+.main {
+    background: #f9cf00 !important;
+}
+
+.carousel {
+    margin: 0px auto;
+    max-width: 960px;
+}
+
+.carousel img {
+    width: 960px !important;
+    height: 500px;
+}
+
+.carousel-indicators li {
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+}
+
+.container {
+    width: 960px;
+    height: auto;
+}
+
+.fixed-bottom {
+    position: absolute !important;
+    bottom: auto;
+}
+
+.list-group-item {
+    width: 100px;
+    padding-right: 0px;
+    padding-left: 0px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.list-group-item.active {
+    z-index: 2;
+    color: #fff !important;
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.media-objects {
+    background: #fff !important;
+    padding: 10px;
+}
+
+.media {
+    padding: 10px;
+}
+
+.media-body {
+    text-align: left;
+    padding-left: 20px;
+}
+
+.imgholder {
+    background: url("../img/hoverimg.png") no-repeat;
+    width: 430px;
+}
+
+.imgholder img:hover {
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+}
+
+.navbar-brand, .nav-link {
+    color: #fff;
+}
+
+.navbar-toggle {
+    display: none;
+} 
+
+.nav-link {
+    color: #fff !important;
+}
+
+.table {
+    background: #fff;
+    border-radius: 5px;
+}
+
+.table tr {
+    text-align: left;
+}
+
+.table td {
+    padding: .75rem;
+    vertical-align: top;
+    border-top: 1px solid #dee2e6 !important; 
+    border-bottom: 1px solid #dee2e6 !important;
+}
+
+.table th {
+    border-top: none !important;
+}
+
+li.active {
+    background: #fff;
+    border: double 2px #000;
+}
+
+a.active {
+    color: #000 !important;
+}
+
+.wrapper {
+    padding: 20px 10px;
+}
+
+.list-group-item.active {
+    background: #4484CE;
+    border-color: #4484CE;
+}
+  
+.image-grid {
+    box-sizing: border-box;
+}
+
+.image-row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.image-column {
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+}
+
+.image-column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+}
+
+.image-column img:hover {
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+}
+
+#about .col-md-7 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.form-page {
+    background: #f19f4d !important;
+    margin: 35px 5px 15px 15px;
+    padding: 15px;
+}
+
+.icons {
+    display: inline-block;
+    margin: 15px;
+    padding: 15px;
+}
+
+.icons img {
+    width: 75px;
+    border-radius: 5px;
+}

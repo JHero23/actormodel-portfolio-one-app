@@ -1,0 +1,20 @@
+/* #### Tablets Portrait or Landscape #### */
+@media screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+    /* some CSS here */
+    header {
+        width: 100%;
+    }
+
+    footer {
+        width: 100%;
+    }
+
+    .carousel img {
+        width: 100% !important;
+        height: auto;
+    }
+
+    .navbar-toggler {
+        color: #fff;
+    }
+}
