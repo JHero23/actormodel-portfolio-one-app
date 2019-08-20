@@ -1,39 +1,48 @@
-require 'sinatra'
+require 'sinatra/base'
 require 'sinatra/multi_route'
-require 'sinatra/reloader' if development?
 
-def active?(path="/")
-    (request.path==path || request.path==path+'/') ? ("active") : (nil)
-end
+class WebApp < Sinatra::Base
+    def set_title
+        @title ||= "Actor-Model Name"
+    end
 
-get '/' do
-    erb :index
-end
+    def active?(path="/")
+        (request.path==path || request.path==path+'/') ? ("active") : (nil)
+    end
 
-get '/home' do
-    redirect to('/')
-end
+    get '/' do
+        erb :index
+    end
 
-get '/actor' do
-    erb :actor
-end
+    get '/home' do
+        redirect to('/')
+    end
 
-get '/contact' do
-    erb :contact
-end
+    get '/actor' do
+        @title = "Actor"
+        erb :actor
+    end
 
-get '/model' do
-    erb :model
-end
+    get '/contact' do
+        @title = "Contact"
+        erb :contact
+    end
 
-get '/about' do
-    erb :about
-end
+    get '/model' do
+        @title = "Model"
+        erb :model
+    end
 
-not_found do
-    "LINK IS NOT FOUND GO BACK <a href='/home'>HOME</a>"
-end
+    get '/about' do
+        @title = "About"
+        erb :about
+    end
 
-post '/contact' do
-    redirect to('/')
+    not_found do
+        "LINK IS NOT FOUND GO BACK <a href='/home'>HOME</a>"
+    end
+
+    post '/contact' do
+        redirect to('/')
+    end
 end
