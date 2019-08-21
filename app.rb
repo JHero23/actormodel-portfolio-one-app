@@ -1,7 +1,11 @@
 require 'sinatra/base'
 require 'sinatra/multi_route'
+require 'sinatra/flash'
+require './asset-handler'
 
 class WebApp < Sinatra::Base
+    use AssetHandler
+
     def set_title
         @title ||= "Actor-Model Name"
     end
@@ -43,6 +47,7 @@ class WebApp < Sinatra::Base
     end
 
     post '/contact' do
+        flash[:notice] = "We'll keep in touch"
         redirect to('/')
     end
 end
