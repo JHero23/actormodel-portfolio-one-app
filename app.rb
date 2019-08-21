@@ -36,7 +36,7 @@ class WebApp < Sinatra::Base
 
     get '/contact' do
         @title = "Contact"
-        erb :contact
+        slim :contact
     end
 
     get '/model' do

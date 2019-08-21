@@ -1,0 +1,33 @@
+.container
+  .form-page.text-white
+    form.form[action="" method="POST"]
+      .form-group
+        label[for="InputEmail"]
+          | Email Address
+        input#InputEmail.form-control[type="email" aria-describedby="emailHelp" placeholder="Enter Email"]
+      .form-group
+        label[for="InputName"]
+          | Name
+        input#InputName.form-control[type="text" aria-describedby="nameHelp" placeholder="Enter Name"]
+      .form-group
+        label[for="InputCompany"]
+          | Company
+        input#InputCompany.form-control[type="text" aria-describedby="companyHelp" placeholder="Enter Company (Optional)"]
+      .form-group
+        label[for="InputSubject"]
+          | Subject
+        input#InputSubject.form-control[type="text" aria-describedby="subjectHelp" placeholder="Enter Subject"]
+      .form-group
+        label[for="InputMessage"]
+          | Message
+        textarea#InputMessage.form-control[name="message" aria-describedby="messageHelp" rows="5" cols="15" placeholder="Enter Message"]
+      button.btn.bg-cerulean.text-white[type="submit"]
+        | Send
+  .icons
+    a[href="https://facebook.com"]
+      img[src="img/facebook.png"]
+    a[href="#"]
+      img[src="img/email-2.jpg"]
+    a[href="https://instagram.com"]
+      img[src="img/instagram.png"]
+      
