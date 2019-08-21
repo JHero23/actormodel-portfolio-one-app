@@ -1,4 +1,38 @@
-div#carouselIndicators.carousel.slide
+div#carouselIndicators.carousel.slide[data-ride="carousel"]
     ol.carousel-indicators
-        li.active
-        
+        li.active[data-target="#carouselIndicators" data-slide-to="0"]
+        li[data-target="#carouselIndicators" data-slide-to="1"]
+        li[data-target="#carouselIndicators" data-slide-to="2"]
+    div.carousel-inner
+        div.bg-dark.carousel-item.active
+            img.d-block.w-100[alt="First slide" src="img/111.png"]
+        div.bg-info.carousel-item
+            img.d-block.w-100[alt="Second slide" src="img/960x500.png"]
+        div.bg-primary.carousel-item
+            img.d-block.w-100[alt="Third slide" src="img/008000.png"]
+    a.carousel-control-prev[href="#carouselIndicators" role="button" data-slide="prev"]
+        span.carousel-control-prev-icon[aria-hidden="true"]
+        span.sr-only Previous
+    a.carousel-control-next[href="#carouselIndicators" role="button" data-slide="next"]
+        span.carousel-control-next-icon[aria-hidden="true"]
+        span.sr-only Next
+br
+/ Main Article/Welcome
+div#main-article.container.main.bg-light
+    div.wrapper
+        div.content.text-white
+            h2 Welcome!
+            p.lead Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quam pellentesque nec nam aliquam sem et tortor consequat id. Vestibulum lorem sed risus ultricies. Elementum nibh tellus molestie nunc non. Lacus luctus accumsan tortor posuere ac ut.
+br
+/ NEW VIDEO/POST UPDATE MAIN ARTICLE 
+div#update-articles.container.update.bg-dark
+  div.wrapper
+    div.content.text-white
+      h3 Meanwhile...
+      h4 Awesome News
+      p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eleifend donec pretium vulputate sap.
+      span.text-white Lorem ipsum dolor sit amet.
+      hr
+      h4 Awesome News
+      p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eleifend donec pretium vulputate sap.
+br

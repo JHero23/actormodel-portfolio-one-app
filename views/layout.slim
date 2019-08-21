@@ -3,6 +3,7 @@ html lang='en'
     head
         title== @title
         meta charset='utf-8'
+        meta[name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"]        
         / Icons
         link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css"
         / CSS STYLES AND BOOSTRAP CSS
@@ -13,7 +14,7 @@ html lang='en'
                 / Brand
                 a.navbar-brand href='/' Actor-Model Name
                 / Toggler-collapsible Button
-                button.navbar-toggler
+                button.navbar-toggler[type="button" data-toggle="collapse" data-target="#collapsibleNavbar"]
                     / span.navbar-toggler-icon
                     i.fas.fa-bars
                 / Navbar Links
