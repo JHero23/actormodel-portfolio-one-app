@@ -14,6 +14,12 @@ class WebApp < Sinatra::Base
         (request.path==path || request.path==path+'/') ? ("active") : (nil)
     end
 
+    def css(*stylesheets)
+        stylesheets.map do |styles|
+			"<link href=\"/css/#{styles}.css\" media=\"screen, projection\" rel=\"stylesheet\" />"
+        end.join
+    end
+
     get '/' do
         erb :index
     end
