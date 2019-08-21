@@ -1,0 +1,48 @@
+doctype html
+html lang='en'
+    head
+        title== @title
+        meta charset='utf-8'
+        / Icons
+        link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css"
+        / CSS STYLES AND BOOSTRAP CSS
+        == css :"bootstrap.min", :main, :mobile, :tablet
+    body
+        header
+            nav.navbar.navbar-expand-lg.bg-cerulean.navbar-dark
+                / Brand
+                a.navbar-brand href='/' Actor-Model Name
+                / Toggler-collapsible Button
+                button.navbar-toggler
+                    / span.navbar-toggler-icon
+                    i.fas.fa-bars
+                / Navbar Links
+                div.collapse.navbar-collapse.justify-content-center#collapsibleNavbar
+                    ul.navbar-nav
+                        li.nav-item class==active?('/') 
+                            a.nav-link class==active?('/') href="/home" Home
+                        li.nav-item class==active?('/actor')
+                            a.nav-link class==active?('/actor') href="/actor" Actor
+                        li.nav-item class==active?('/model')
+                            a.nav-link class==active?('/model') href="/model" Model
+                        li.nav-item class==active?('/about')
+                            a.nav-link class==active?('/about') href="/about" About
+                        li.nav-item class==active?('/contact')
+                            a.nav-link class==active?('/contact') href="/contact" Contact
+        main
+            h1.text-center Actor-Model Name
+            == yield
+        / Footer
+        footer.page-footer.font-small.bg-cerulean.fixed-bottom
+            / Copyright
+            div.footer-copyright.text-white.text-center.py-3
+                | © 2018 Copyright | 
+                a.text-white[href="#"]
+                    |  JHero Studios
+            / Copyright
+        / Footer
+        / jQuery first, then Popper.js, then Bootstrap JS
+        script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"
+        script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"
+        script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"
+        / JS Scripts

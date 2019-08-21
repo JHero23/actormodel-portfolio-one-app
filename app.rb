@@ -2,6 +2,7 @@ require 'sinatra/base'
 require 'sinatra/multi_route'
 require 'sinatra/flash'
 require './asset-handler'
+require 'slim'
 
 class WebApp < Sinatra::Base
     use AssetHandler
@@ -21,7 +22,8 @@ class WebApp < Sinatra::Base
     end
 
     get '/' do
-        erb :index
+        # erb :index
+        slim :index
     end
 
     get '/home' do
