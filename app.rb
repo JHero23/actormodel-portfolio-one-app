@@ -22,7 +22,6 @@ class WebApp < Sinatra::Base
     end
 
     get '/' do
-        # erb :index
         slim :index
     end
 
@@ -32,7 +31,7 @@ class WebApp < Sinatra::Base
 
     get '/actor' do
         @title = "Actor"
-        erb :actor
+        slim :actor
     end
 
     get '/contact' do
