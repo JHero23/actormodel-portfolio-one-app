@@ -3,6 +3,8 @@ class AssetHandler < Sinatra::Base
         set :views, File.dirname(__FILE__) + '/assets'
         set :jsdir, 'js'
         set :cssdir, 'css'
+        enable :coffeescript
+        set :cssengine, 'scss'
     end
 
     get '/js/*.js' do

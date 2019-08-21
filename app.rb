@@ -6,6 +6,7 @@ require 'slim'
 
 class WebApp < Sinatra::Base
     use AssetHandler
+    register Sinatra::Flash
 
     def set_title
         @title ||= "Actor-Model Name"
