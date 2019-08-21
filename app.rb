@@ -41,7 +41,7 @@ class WebApp < Sinatra::Base
 
     get '/model' do
         @title = "Model"
-        erb :model
+        slim :model
     end
 
     get '/about' do
