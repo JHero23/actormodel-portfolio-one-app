@@ -46,7 +46,7 @@ class WebApp < Sinatra::Base
 
     get '/about' do
         @title = "About"
-        erb :about
+        slim :about
     end
 
     not_found do
