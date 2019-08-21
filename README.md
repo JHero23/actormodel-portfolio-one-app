@@ -1,5 +1,5 @@
 # Actor/Model Portfolio Template 1 (App Version)
-A basic, multi-page, actor/model portfolio with minimal design from Bootstrap along with personal design and color choices.
+A basic, multi-page, actor/model portfolio template with minimal design from Bootstrap along with personal design and color choices.
 
 ## Purpose
 The purpose of this template is to already have a basic portfolio website made for an actor/model to lessen time to build from scratch, allowing users to spend less time architecting and styling, and more time adding images, bios, new updates, etc.
